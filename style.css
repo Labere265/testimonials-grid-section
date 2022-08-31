@@ -1,0 +1,171 @@
+:root{
+
+    --Moderate-violet: hsl(263, 55%, 52%);
+    --Very-dark-grayish-blue: hsl(217, 19%, 35%);
+    --Very-dark-blackish-blue: hsl(219, 29%, 14%);
+    --White: hsl(0, 0%, 100%); 
+    --Light-gray: hsl(0, 0%, 81%);
+    --Light-grayish-blue: hsl(210, 46%, 95%);
+
+}
+*{
+	box-sizing: border-box;
+	padding:0;
+	margin:0;
+}
+html, body{
+    font-size: 62%;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    background-color: var(--Light-grayish-blue);
+}
+
+.card {
+	border-radius: 8px;
+	padding:32px;
+}
+img {
+    border-style: none;
+    object-fit: cover;
+    max-width: 100%;
+}
+.cardheader {
+	display: flex;
+	gap: 14px;
+    align-items: center;
+	margin-bottom: 14px;
+}
+.user_picture {
+	width: 36px;
+}
+.user_img {
+	border-radius: 50%;
+	width: 100%
+}
+.name {
+	font-size: 21px;
+	color: white;
+	margin: 3px;
+	font-weight: 500;
+}
+.graduatetag{
+	color:white;
+	opacity: .5;
+	font-size: 16px;
+}
+.topictag {
+	color: white;
+	font-weight: 600;
+	margin-bottom: 9px;
+	line-height:25px;
+	font-size: 18px;
+}
+.testimonial {
+	color: white;
+    opacity: 0.7;
+    font-size: 16px;
+    line-height: 18px;
+}
+#card1{ 
+    background: var(--Moderate-violet) url("/images/bg-pattern-quotation.svg");
+    background-repeat: no-repeat;
+    background-position:90% 0;
+    grid-area: card1;
+}
+#card2{ 
+    background: var(--Very-dark-grayish-blue);
+    grid-area: card2;
+}
+#card3{
+    grid-area: card3;
+}
+#card4{
+    background-color: var(--Very-dark-blackish-blue);
+    grid-area: card4;
+}
+#card5{
+    grid-area: card5;
+}
+#card1 .user__img, #card4 .user__img{
+    border: 2px solid #a775f1;
+}
+#card3, #card5{ 
+    background: white;
+}
+#card3 .name, #card3 .graduatetag, #card3 .topictag, #card3 .testimonial{
+    color: var(--Very-dark-grayish-blue);
+} 
+#card5 .name, #card5 .graduatetag, #card5 .topictag, #card5 .testimonial{
+    color: var(--Very-dark-grayish-blue);
+}
+     .attribution {
+		font-size: 11px;
+		text-align: center;
+	}
+    .attribution a{
+		color: hsl(228, 45%, 44%); 
+		text-decoration: none;
+	}
+
+@media screen and (min-width:1000px){
+
+	body{
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    main{
+        display: grid;
+        margin: 0;
+        grid-template-columns:repeat(4, 1fr);
+        grid-template-areas: "card1 card1 card2 card5"
+                             "card3 card4 card4 card5";
+        gap: 32px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
